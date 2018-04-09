@@ -7,19 +7,25 @@ parallels 安装[centos](http://mirrors.163.com/centos/7.4.1708/isos/x86_64/)
 ![](net.jpeg)
 
 修改后的值
-ONBOOT=yes
+
+```ONBOOT=yes
 BOOTPROTO=static
+```
 
 添加的新值
-IPADDR=192.168.0.188
+
+```IPADDR=192.168.0.188
 GATEWAY=192.168.1.1
 NETMASK=255.255.248.0
 DNS1=192.168.1.1
 DNS2=8.8.8.8
 
+```
 保存后网络重启
-[root@localhost ~]# /etc/init.d/network stop
+
+```[root@localhost ~]# /etc/init.d/network stop
 [root@localhost ~]# /etc/init.d/network start
+```
 
     
 
